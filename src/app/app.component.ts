@@ -7,9 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Peace Maker';
-  brand = { name: 'Peace Maker', routeTo: '' };
-  navItems = [
-    { name: 'Contact-Me', routeTo: 'contact-me' },
-    { name: 'Portfolio', routeTo: 'portfolio' },
-  ];
 }

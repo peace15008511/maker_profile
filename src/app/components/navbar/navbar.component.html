@@ -1,0 +1,28 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="{{ brand.routeTo }}">{{
+      brand.name
+    }}</a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li
+          *ngFor="let navItem of navItems; index as i"
+          class="nav-item"
+          type="submit"
+        >
+          <a
+            class="nav-link active"
+            aria-current="page"
+            href="{{ navItem.routeTo }}"
+            >{{ navItem.name }}</a
+          >
+        </li>
+      </ul>
+
+      <button class="btn btn-outline-success d-flex" type="submit">
+        Download resume
+      </button>
+    </div>
+  </div>
+</nav>
